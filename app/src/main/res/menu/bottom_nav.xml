@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:icon="@drawable/ic_outline_home_24"
+        android:id="@+id/homeee"/>
+    <item android:title="Recent"
+        android:icon="@drawable/recent_icon"
+        android:id="@+id/recent"/>
+    <item android:title="Collection"
+        android:icon="@drawable/collection_icon"
+        android:id="@+id/collection"/>
+    <item android:title="Animated"
+        android:icon="@drawable/animation_icon"
+        android:id="@+id/animated"/>
+
+</menu>

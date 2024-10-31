@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/Signup_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="WallFusion"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Signup_linearLayout"
+        tools:ignore="UnknownId">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_view"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        tools:ignore="InvalidId,MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/card_background"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wallfusion_main_logo">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Sign Up!"
+                android:textSize="40dp"
+                android:layout_marginTop="50dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/et_emailupCv"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:hint="Enter Your Email"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etup_email"
+                    android:textColorHint="@color/black"
+                    android:layout_width="match_parent"
+                    android:drawableStart="@drawable/ic_outline_email_24"
+                    android:hint="Enter Your Email"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="15dp"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/etup_passwordCv"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:hint="Enter Your Password"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etup_password"
+                    android:textColorHint="@color/black"
+                    android:layout_width="match_parent"
+                    android:drawableStart="@drawable/ic_outline_lock_24"
+                    android:hint="Enter Your Password"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="15dp"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/etup_confirm_passwordCv"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    android:hint="Enter Your Password"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintEnabled="false"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etupConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/black"
+                    android:drawableStart="@drawable/ic_outline_lock_24"
+                    android:hint="Enter Your Password"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="15dp"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/Already_registered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="Already Registered ? "
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_SignUp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_dr"
+                android:text="Signup"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

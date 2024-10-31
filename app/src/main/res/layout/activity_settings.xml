@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/textViewUserId"
+        android:layout_below="@+id/mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="181dp"
+        android:text="User ID: "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUserId"
+        android:layout_marginTop="266dp"
+        android:padding="20dp"
+        android:text="ID may be required to help developer resolve an error"
+        android:textColor="#B2AFAF"
+        android:textSize="19sp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_height="wrap_content"
+        >
+
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="LogOut"
+        android:textAlignment="center"
+        android:textColor="#F11212"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_baseline_logout_24" />
+
+
+</RelativeLayout>

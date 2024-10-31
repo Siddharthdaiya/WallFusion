@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/gradient"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/wallfusion_main_logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:id="@+id/app_name"
+        android:paddingTop="8dp"
+        android:textSize="30sp"
+        android:text="WallFusion"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:id="@+id/app_slogan"
+        android:paddingTop="8dp"
+        android:textSize="18sp"
+        android:text="Explore the new Wallpapers"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/underline"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>
